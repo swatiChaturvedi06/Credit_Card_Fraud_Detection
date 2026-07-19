@@ -102,6 +102,8 @@ elif page=="💳 Predict":
     if st.button("🔍 Analyze Transaction"):
         st.success("Prediction will appear here.")
         st.progress(70)
+        st.write(f"Fraud Probability: {fraud_prob:.2f}%")
+        st.progress(int(fraud_prob))
 
 elif page=="📊 Analytics":
 
